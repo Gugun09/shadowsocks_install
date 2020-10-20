@@ -32,7 +32,7 @@ yellow='\033[0;33m'
 plain='\033[0m'
 
 [[ $EUID -ne 0 ]] && echo -e "[${red}Error${plain}] This script must be run as root!" && exit 1
-
+IP=`dig +short myip.opendns.com @resolver1.opendns.com`
 cur_dir=$( pwd )
 software=(Shadowsocks-Python ShadowsocksR Shadowsocks-Go Shadowsocks-libev)
 
@@ -1109,7 +1109,7 @@ qr_generate_r(){
         cp ss-r.png /var/www/html/
         echo 'Your QR Code has been saved as a PNG file path:'
         echo -e "${green} ${cur_dir}/ss-r.png ${plain}"
-        echo -e "Config : http://$(get_ip)":81/ss-r.png
+        echo -e "Config SSR: http://$IP:81/ss-r.png"
     fi
 }
 
