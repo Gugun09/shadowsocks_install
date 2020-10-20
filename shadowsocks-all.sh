@@ -1091,7 +1091,7 @@ qr_generate_python(){
         cp ss-py.png /var/www/html/
         echo 'Your QR Code has been saved as a PNG file path:'
         echo -e "${green} ${cur_dir}/ss-py.png ${plain}"
-        echo 'Config : http://$(get_ip):81/ss-py.png'
+        echo -e "Config SSR: http://$IP:81/ss-py.png"
     fi
 }
 
@@ -1125,7 +1125,7 @@ qr_generate_go(){
         cp ss-go.png /var/www/html/
         echo 'Your QR Code has been saved as a PNG file path:'
         echo -e "${green} ${cur_dir}/ss-go.png ${plain}"
-        echo 'Config : http://$(get_ip):81/ss-go.png'
+        echo -e "Config SSR: http://$IP:81/ss-go.png"
     fi
 }
 
@@ -1141,7 +1141,7 @@ qr_generate_libev(){
         cp ss-libev.png /var/www/html/
         echo 'Your QR Code has been saved as a PNG file path:'
         echo -e "${green} ${cur_dir}/ss-libev.png ${plain}"
-        echo 'Config : http://$(get_ip):81/ss-libev.png'
+        echo -e "Config SSR: http://$IP:81/ss-libev.png"
     fi
 }
 
