@@ -1,4 +1,3 @@
-# shadowsocks-all
 
 <h1 align="center">Run The ShadowsocksR Auto-Installer</h1>
 
@@ -15,9 +14,16 @@
   <a><img src="https://img.shields.io/badge/Service-Shadowsocks Go-green.svg"></a>
   <a><img src="https://img.shields.io/badge/Service-Shadowsocks Libev-green.svg"></a>
  </p>
- 
-$ wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/gugun09/shadowsocks_install/main/shadowsocks-all.sh
-$ chmod +x shadowsocks-all.sh
+
+<h3 align="center">Installation (Default Version)</h3>
+
+  ```html
+wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/gugun09/shadowsocks_install/main/shadowsocks-all.sh <br>
+chmod +x shadowsocks-all.sh
+  ```
+  
+$ 
+$ 
 $ ./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
 
 Notes: Ini berisi installer untuk paket Shadowsocks lainnya juga.
