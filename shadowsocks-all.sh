@@ -1087,9 +1087,10 @@ qr_generate_python(){
         echo
         echo 'Your QR Code: (For Shadowsocks Windows, OSX, Android and iOS clients)'
         echo -e "${green} ${qr_code} ${plain}"
-        echo -n "${qr_code}" | qrencode -s8 -o "${cur_dir}"/shadowsocks_python_qr.png
+        echo -n "${qr_code}" | qrencode -s8 -o "${cur_dir}"/ss-py.png
+        cp ss-py.png /var/www/html/
         echo 'Your QR Code has been saved as a PNG file path:'
-        echo -e "${green} ${cur_dir}/shadowsocks_python_qr.png ${plain}"
+        echo -e "${green} ${cur_dir}/ss-py.png ${plain}"
     fi
 }
 
@@ -1103,10 +1104,10 @@ qr_generate_r(){
         echo
         echo 'Your QR Code: (For ShadowsocksR Windows, Android clients only)'
         echo -e "${green} ${qr_code} ${plain}"
-        echo -n "${qr_code}" | qrencode -s8 -o "${cur_dir}"/shadowsocks_r_qr.png
-        cp shadowsocks_r_qr.png /var/www/html/
+        echo -n "${qr_code}" | qrencode -s8 -o "${cur_dir}"/ss-r.png
+        cp ss-r.png /var/www/html/
         echo 'Your QR Code has been saved as a PNG file path:'
-        echo -e "${green} ${cur_dir}/shadowsocks_r_qr.png ${plain}"
+        echo -e "${green} ${cur_dir}/ss-r.png ${plain}"
     fi
 }
 
@@ -1118,9 +1119,10 @@ qr_generate_go(){
         echo
         echo 'Your QR Code: (For Shadowsocks Windows, OSX, Android and iOS clients)'
         echo -e "${green} ${qr_code} ${plain}"
-        echo -n "${qr_code}" | qrencode -s8 -o "${cur_dir}"/shadowsocks_go_qr.png
+        echo -n "${qr_code}" | qrencode -s8 -o "${cur_dir}"/ss-go.png
+        cp ss-go.png /var/www/html/
         echo 'Your QR Code has been saved as a PNG file path:'
-        echo -e "${green} ${cur_dir}/shadowsocks_go_qr.png ${plain}"
+        echo -e "${green} ${cur_dir}/ss-go.png ${plain}"
     fi
 }
 
@@ -1132,9 +1134,10 @@ qr_generate_libev(){
         echo
         echo 'Your QR Code: (For Shadowsocks Windows, OSX, Android and iOS clients)'
         echo -e "${green} ${qr_code} ${plain}"
-        echo -n "${qr_code}" | qrencode -s8 -o "${cur_dir}"/shadowsocks_libev_qr.png
+        echo -n "${qr_code}" | qrencode -s8 -o "${cur_dir}"/ss-libev.png
+        cp ss-libev.png /var/www/html/
         echo 'Your QR Code has been saved as a PNG file path:'
-        echo -e "${green} ${cur_dir}/shadowsocks_libev_qr.png ${plain}"
+        echo -e "${green} ${cur_dir}/ss-libev.png ${plain}"
     fi
 }
 
