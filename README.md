@@ -58,3 +58,7 @@ Shadowsocks-libev：
   ```html
 /etc/init.d/shadowsocks-libev start | stop | restart | status
   ```
+
+<p>
+  <a href="https://t.me/var_dump404"><img src="https://img.shields.io/badge/Donate-Telegram-blue.svg" alt="Donate"></a>
+</p>
