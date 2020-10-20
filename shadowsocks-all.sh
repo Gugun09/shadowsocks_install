@@ -1109,7 +1109,7 @@ qr_generate_r(){
         cp ss-r.png /var/www/html/
         echo 'Your QR Code has been saved as a PNG file path:'
         echo -e "${green} ${cur_dir}/ss-r.png ${plain}"
-        echo -e "Config : http://$(get_ip):81/ss-r.png"
+        echo -e "Config : http://${red} $(get_ip) ${plain}":81/ss-r.png
     fi
 }
 
